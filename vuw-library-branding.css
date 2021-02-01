@@ -30,11 +30,11 @@ STYLES
 */
 
 .library-bg-color{
-	background-color:#0ba695;		
+	background-color:#0d4c38;		
 }
 
 .library-border-bgcolor{
-	background-color:#0ba695;		
+	background-color:#0d4c38;		
 }
 
 
@@ -93,7 +93,7 @@ STYLES
 
 
 .vuw-library-branding .cell.library-branding{
-	background-color: #0ba695;
+	background-color: #0d4c38;
     width:auto;	
 }
 
@@ -109,7 +109,7 @@ STYLES
 	font-family: "Nimbus Roman No 9 L", "FreeSerif", "Georgia", serif;
 	color:#FFF;
 	font-size:3.5em;
-	background-color:#0ba695;	
+	background-color:#0d4c38;	
 	padding:0em;
 	padding-left:0.4em;
 	padding-right:0.3em;
