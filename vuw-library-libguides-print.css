@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media print {
+
+#s-lib-bc-customer, #s-lib-bc-site, #s-lib-bc-group, #s-lib-bc-page {
+	display:none;
+}
+
+
+.nav-pills {
+	display:none;
+}
+
+.s-lib-box-title {
+	padding:0;
+}
+
+#s-lg-col-0{
+	display:none;
+}
+
+/* REMOVED, AS 250 REFERS TO INDIVIDUAL ID NUMBER
+#s-lib-profile-250{
+	margin-left:0.75em;
+}
+
+#s-lib-profile-image-250 {
+	display:none;
+}
+
+#s-lib-profile-name-250 {
+	text-align:left;
+}
+
+#s-lib-profile-email-250 {
+	text-align:left;
+	margin:0;
+	padding:0;
+
+}
+
+#s-lib-profile-email-250 a {
+	margin:0;
+	padding:0;
+	border-radius:0;
+	border:none;
+	box-shadow:none;
+	font-size: 1.2em !important;
+	font-weight:normal;
+}
+
+
+#s-lib-profile-widget-other-250{
+	display:none;
+}
+*/
+
+.vuw-library-header{
+	display:none;
+}
+
+.s-lg-tabs-side{display:none!important;}
+.col-md-9{width:100%!important}
+h1#s-lg-guide-name{
+	font-size:2em!important;	
+	color:#000000!important;
+}
+.s-lib-box-std h2.s-lib-box-title{
+	background-color:#fff!important;
+	color:#000!important;
+	padding:0!important;
+	border:0px!important;
+}
+.s-lg-page-section{
+	display:none!important;	
+}
+
+}

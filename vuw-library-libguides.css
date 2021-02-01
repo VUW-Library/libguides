@@ -1,0 +1,183 @@
+/* CSS Document */
+
+@import url("./vuw-library-branding.css");
+
+/* Enter ovverride styles here */
+
+.container.header{
+	padding-left:0px!important;	
+	padding-right:0px!important;	
+}
+
+.container.footer{
+	padding-left:0px!important;	
+	padding-right:0px!important;	
+	font-size:0.75em;
+}
+
+.container.footer #s-lg-guide-header-url{
+	display:none;	
+}
+.container.footer #s-lg-guide-print-url{
+	font-size:1.1em;
+}
+/*Name and title*/
+
+h1#s-lg-guide-name{
+  color:#0ba695 !important;
+  font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;  
+  font-weight: bolder;  
+  font-size: 4.28571em;  
+ -webkit-font-smoothing: antialiased;
+}
+
+.s-lib-box-std .s-lib-box-title {
+	padding:10px;
+	margin-bottom:0;
+	background-color:#0ba695;
+	color:#fff;
+	font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
+	font-size:18px;
+}
+
+/*General body styles*/
+body.s-lg-guide-body {
+        font-size:14px;
+}
+
+
+/*General box styles*/
+.s-lib-box {
+        border: none;
+        box-shadow:none;
+        border-radius:0;
+}
+
+.s-lib-box .s-lib-box-title{
+        border-radius:0;
+}
+
+
+.s-lib-box-content {
+        padding-left:0;
+}
+
+/*Navigation styles*/
+#s-lg-tabs-container .nav-pills > li > a {
+        background-color:#0ba695;
+        border-radius:0;
+}
+
+#s-lg-tabs-container .nav-pills > .active > a {
+        background-color:#00796c;
+        border-radius:0;
+}
+
+#s-lg-tabs-container .nav-pills > .active > a:hover {
+        xxbackground-color:#fff;/*no change color on hover*/
+        border-radius:0;
+}
+
+#s-lg-tabs-container .nav-pills > li > a:hover {
+        background-color:#ccc;
+        border-radius:0;
+}
+
+/*new navigation styling*/
+.nav-pills a {
+    color:#fff;
+}
+
+
+#s-lg-guide-tabs .s-lg-tabs-side .s-lg-boxnav{
+    margin:0;
+}
+
+#s-lg-guide-tabs .s-lg-tabs-side .s-lg-subtab-ul {
+	margin-top: 0;
+	margin-left: 0;
+	margin-bottom: 0px;
+}
+
+#s-lg-guide-tabs .nav-pills .nav-pills, #s-lg-guide-tabs .nav-pills .nav-pills a{
+	 background-color:#00796c!important;
+	 font-weight:normal!important;
+}
+
+#s-lg-guide-tabs .nav-pills .nav-pills .list-group .list-group-item{
+	 background-color: rgba(0,0,0,0.1)!important;
+	 font-weight:normal!important;
+}
+
+#s-lg-guide-tabs .nav-pills .nav-pills .list-group .list-group-item a{
+	background-color:transparent!important;	
+}
+
+
+#s-lg-guide-tabs .s-lg-tabs-side .s-lg-boxnav .list-group-item {
+    margin:0;
+    border:0;
+    background-color:#00796c;
+    border-radius:0;
+    
+}
+
+.nav-stacked>li+li{
+    margin-top:0;
+}
+
+#s-lg-guide-tabs .nav>li{
+border-bottom: #00655a 1px solid;
+}
+
+#s-lg-guide-tabs .nav>li:last-child{
+border-bottom:0;
+}
+
+#s-lg-tabs-container .nav-pills > .active > a {
+    color:#ffd8b6;
+}
+
+#s-lg-tabs-container .nav-pills > .active > a:hover {
+        background-color: #00796c;
+        color:#ffd8b6;
+        border-radius:0;
+}
+
+#s-lg-tabs-container .nav-pills > li > a:hover {
+        background-color: #0ba695;
+        color:#ffd8b6;
+        border-radius:0;
+}
+
+.s-lg-boxnav a:hover{
+text-decoration:none;
+color: #ffd8b6;
+}
+
+
+
+
+/*misc */
+#s-lg-reuse-box-tab a, #s-lg-reuse-content-tab a, #s-lg-add-content-tab a, #s-lg-add-box-tab a, #s-lg-subject-tab a, #s-lg-enhanced-tab a  {
+color: black;
+border: #ccc solid 1px;
+}
+
+#s-lg-box-1175944{
+margin-top:-40px;
+}
+
+#s-lg-guide-main{
+padding-top:0 !important;
+}
+
+.container ul {
+	text-align:left;
+}
+
+@media only screen and (max-width: 800px) {
+h1#s-lg-guide-name{
+  font-size: 2.5em!important;  
+}
+}
