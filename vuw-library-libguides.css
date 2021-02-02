@@ -119,6 +119,7 @@ body.s-lg-guide-body {
   border: 0;
   background-color:  #0d4b2f;
   border-radius: 0;
+  padding-left: 2em;
 }
 
 .nav-stacked > li + li {
