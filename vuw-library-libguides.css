@@ -40,6 +40,7 @@ h1#s-lg-guide-name {
   font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial,
     "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 18px;
+  border:none;
 }
 
 /*General body styles*/
