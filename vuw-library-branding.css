@@ -4,24 +4,24 @@ FONTS
 @font-face {
   font-family: 'National';
   font-weight: 400;
-  src: url("../fonts/NationalWebLF-Regular.eot");
-  src: url("../fonts/NationalWebLF-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NationalWebLF-Regular.woff") format("woff"), url("../fonts/NationalWebLF-Regular.ttf") format("truetype");
+  src: url("./fonts/NationalWebLF-Regular.eot");
+  src: url("./fonts/NationalWebLF-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/NationalWebLF-Regular.woff") format("woff"), url("./fonts/NationalWebLF-Regular.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'National';
   font-weight: 500;
-  src: url("../fonts/NationalWebLF-Semibold.eot");
-  src: url("../fonts/NationalWebLF-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/NationalWebLF-Semibold.woff") format("woff"), url("../fonts/NationalWebLF-Semibold.ttf") format("truetype");
+  src: url("./fonts/NationalWebLF-Semibold.eot");
+  src: url("./fonts/NationalWebLF-Semibold.eot?#iefix") format("embedded-opentype"), url("./fonts/NationalWebLF-Semibold.woff") format("woff"), url("./fonts/NationalWebLF-Semibold.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'National';
   font-weight: 600;
-  src: url("../fonts/NationalWebLF-Extrabold.eot");
-  src: url("../fonts/NationalWebLF-Extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/NationalWebLF-Extrabold.woff") format("woff"), url("../fonts/NationalWebLF-Extrabold.ttf") format("truetype");
+  src: url("./fonts/NationalWebLF-Extrabold.eot");
+  src: url("./fonts/NationalWebLF-Extrabold.eot?#iefix") format("embedded-opentype"), url("./fonts/NationalWebLF-Extrabold.woff") format("woff"), url("./fonts/NationalWebLF-Extrabold.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
 
