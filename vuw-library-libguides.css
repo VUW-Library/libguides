@@ -24,7 +24,7 @@
 /*Name and title*/
 
 h1#s-lg-guide-name {
-  color: #0d4c38 !important;
+  color: #115737 !important;
   font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial,
     "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: bolder;
@@ -35,7 +35,7 @@ h1#s-lg-guide-name {
 .s-lib-box-std .s-lib-box-title {
   padding: 10px;
   margin-bottom: 0;
-  background-color: #0d4c38;
+  background-color: #115737;
   color: #fff;
   font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial,
     "Helvetica Neue", "Helvetica", sans-serif;
@@ -64,8 +64,9 @@ body.s-lg-guide-body {
 
 /*Navigation styles*/
 #s-lg-tabs-container .nav-pills > li > a {
-  background-color: #0d4c38;
+  background-color: #115737;
   border-radius: 0;
+  color: #ddd;
 }
 
 #s-lg-tabs-container .nav-pills > .active > a {
@@ -85,7 +86,7 @@ body.s-lg-guide-body {
 
 /*new navigation styling*/
 .nav-pills a {
-  color: #fff;
+  color: #ddd;
 }
 
 #s-lg-guide-tabs .s-lg-tabs-side .s-lg-boxnav {
@@ -100,7 +101,7 @@ body.s-lg-guide-body {
 
 #s-lg-guide-tabs .nav-pills .nav-pills,
 #s-lg-guide-tabs .nav-pills .nav-pills a {
-  background-color: #0d4b2f !important;
+  background-color: #115737 !important;
   font-weight: normal !important;
 }
 
@@ -116,7 +117,7 @@ body.s-lg-guide-body {
 #s-lg-guide-tabs .s-lg-tabs-side .s-lg-boxnav .list-group-item {
   margin: 0;
   border: 0;
-  background-color: #0d4b2f;
+  background-color:  #0d4b2f;
   border-radius: 0;
 }
 
@@ -125,7 +126,7 @@ body.s-lg-guide-body {
 }
 
 #s-lg-guide-tabs .nav > li {
-  border-bottom: #0d4b2f 1px solid;
+  border-bottom: #115737 1px solid;
 }
 
 #s-lg-guide-tabs .nav > li:last-child {
@@ -133,24 +134,24 @@ body.s-lg-guide-body {
 }
 
 #s-lg-tabs-container .nav-pills > .active > a {
-  color: #ffd8b6;
+  color: #fff;
 }
 
 #s-lg-tabs-container .nav-pills > .active > a:hover {
-  background-color: #0d4b2f;
-  color: #ffd8b6;
+  background-color: #115737;
+  color: #fff;
   border-radius: 0;
 }
 
 #s-lg-tabs-container .nav-pills > li > a:hover {
-  background-color: #0d4c38;
-  color: #ffd8b6;
+  background-color:#115737;
+  color: #fff;
   border-radius: 0;
 }
 
 .s-lg-boxnav a:hover {
   text-decoration: none;
-  color: #ffd8b6;
+  color: #fff;
 }
 
 /*misc */
