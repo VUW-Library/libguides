@@ -108,7 +108,6 @@ $(document).ready(function() {
 	var bcItems = Array.from($("#s-lib-bc-list li")).map(function(item) {
 		return item.innerText.trim().toLowerCase();
 	});
-	console.log(bcItems);
-	isFirstPage = bcItems.indexOf("home") != 0;
+	isFirstPage = bcItems.indexOf("home") != -1;
 	changeClasses(isFirstPage);
 });
