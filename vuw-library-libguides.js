@@ -71,16 +71,29 @@ VU.LG = {};
 
 function changeClasses(isFirstPage) {
   if (!isFirstPage) {
-	$("#page-name").removeClass("make-hidden");
-	$("#guide-title").removeClass("make-hidden").addClass("int-page");
-	$("#left-guide-body").removeClass("make-hidden").addClass("col-md-3").addClass("s-lg-tabs-side").addClass("pad-bottom-med");
-	$("#right-guide-body").removeClass("col-md-12").addClass("col-md-9");
+	$("#page-name")
+		.removeClass("make-hidden");
+	$("#guide-title")
+		.removeClass("make-hidden")
+		.addClass("int-page");
+	$("#left-guide-body")
+		.removeClass("make-hidden")
+		.addClass("col-md-3 s-lg-tabs-side pad-bottom-med");
+	$("#right-guide-body")
+		.removeClass("col-md-12")
+		.addClass("col-md-9");
   }
   else {
-	$("#guide-title").removeClass("make-hidden");
-	$("#page-name").addClass("make-hidden");
-	$("#left-guide-body").addClass("make-hidden").removeClass("col-md-3").removeClass("s-lg-tabs-side").removeClass("pad-bottom-med");
-	$("#right-guide-body").removeClass("col-md-9").addClass("col-md-12");
+	$("#guide-title")
+		.removeClass("make-hidden");
+	$("#page-name")
+		.addClass("make-hidden");
+	$("#left-guide-body")
+		.addClass("make-hidden")
+		.removeClass("col-md-3 s-lg-tabs-side pad-bottom-med");
+	$("#right-guide-body")
+		.removeClass("col-md-9")
+		.addClass("col-md-12");
   }
 };
 
@@ -94,7 +107,7 @@ $(document).ready(function() {
 
 	var isFirstPage = false;
 	var bcItems = Array.from($("#s-lib-bc-list li")).map(function(item) {
-		$(item).text().trim().toLowerCase();
+		item.innerText.trim().toLowerCase();
 	});
 	console.log(bcItems);
 	isFirstPage = bcItems.indexOf("home") != 0;
