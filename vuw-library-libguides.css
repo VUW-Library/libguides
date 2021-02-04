@@ -22,7 +22,7 @@
 }
 
 /*Name and title*/
-#s-lg-guide-name {
+#s-lg-guide-header-info #s-lg-guide-name {
   color: #115737;
   font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial, "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: 600;
