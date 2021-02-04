@@ -106,6 +106,9 @@ $(document).ready(function() {
 	$("table").addClass("table-layout-ov");
 
 	var isFirstPage = false;
+	Array.from($("#s-lib-bc-list li")).forEach(function(item) {
+		console.log(item.innerText.trim().toLowerCase());
+	});
 	var bcItems = Array.from($("#s-lib-bc-list li")).map(function(item) {
 		item.innerText.trim().toLowerCase();
 	});
