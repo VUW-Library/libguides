@@ -89,47 +89,47 @@ STYLES
             a img {
                 border: 0;
             }
-            &.library-branding{
-                background-color: $Vic-green;
-                width: auto;
-                .library_logo {
-                    font-family: "Nimbus Roman No 9 L", "FreeSerif", "Georgia", serif;
-                    color: #FFF;
-                    font-size: 3.5em;
-                    background-color: $Vic-green;	
-                    padding: 0em;
-                    padding-left: 0.4em;
-                    padding-right: 0.3em;
-                    float: right;
-                    margin-top: 0;
-                    white-space: nowrap;
-                    border-left: 3px solid #fff;
-                    line-height: 1.5;
-                    color:#fff !important;
-                    a {
-                        color: #fff;
-                        text-decoration: none;
-                    }
-                    span.te_reo {
-                        display: block;
-                        font-size: 0.553571411em;
-                        margin-top: -0.9em;    
-                    }
-                }
-                .app-name {
-                    font-family: $Vic-font;    
-                    float: left;
+        }
+        .library-branding {
+            background-color: $Vic-green;
+            width: auto;
+            .library_logo {
+                font-family: "Nimbus Roman No 9 L", "FreeSerif", "Georgia", serif;
+                color: #FFF;
+                font-size: 3.5em;
+                background-color: $Vic-green;	
+                padding: 0em;
+                padding-left: 0.4em;
+                padding-right: 0.3em;
+                float: right;
+                margin-top: 0;
+                white-space: nowrap;
+                border-left: 3px solid #fff;
+                line-height: 1.5;
+                color:#fff !important;
+                a {
                     color: #fff;
-                    font-size: 4em;
-                    padding-left: 0.25em;
-                    -webkit-font-smoothing: antialiased;
-                    line-height: 1;
-                    padding-top: 0.3em;
-                    padding-bottom: 0.3em;
-                    &.small{
-                        font-size:3em;	
-                        line-height:1.5;
-                    }
+                    text-decoration: none;
+                }
+                span.te_reo {
+                    display: block;
+                    font-size: 0.553571411em;
+                    margin-top: -0.9em;    
+                }
+            }
+            .app-name {
+                font-family: $Vic-font;    
+                float: left;
+                color: #fff;
+                font-size: 4em;
+                padding-left: 0.25em;
+                -webkit-font-smoothing: antialiased;
+                line-height: 1;
+                padding-top: 0.3em;
+                padding-bottom: 0.3em;
+                &.small {
+                    font-size: 3em;	
+                    line-height: 1.5;
                 }
             }
         }

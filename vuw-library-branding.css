@@ -93,12 +93,12 @@ STYLES
   border: 0;
 }
 
-.vuw-library-branding .cell.vuw-logo.library-branding {
+.vuw-library-branding .cell .library-branding {
   background-color: #115737;
   width: auto;
 }
 
-.vuw-library-branding .cell.vuw-logo.library-branding .library_logo {
+.vuw-library-branding .cell .library-branding .library_logo {
   font-family: "Nimbus Roman No 9 L", "FreeSerif", "Georgia", serif;
   color: #FFF;
   font-size: 3.5em;
@@ -114,18 +114,18 @@ STYLES
   color: #fff !important;
 }
 
-.vuw-library-branding .cell.vuw-logo.library-branding .library_logo a {
+.vuw-library-branding .cell .library-branding .library_logo a {
   color: #fff;
   text-decoration: none;
 }
 
-.vuw-library-branding .cell.vuw-logo.library-branding .library_logo span.te_reo {
+.vuw-library-branding .cell .library-branding .library_logo span.te_reo {
   display: block;
   font-size: 0.553571411em;
   margin-top: -0.9em;
 }
 
-.vuw-library-branding .cell.vuw-logo.library-branding .app-name {
+.vuw-library-branding .cell .library-branding .app-name {
   font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial, "Helvetica Neue", "Helvetica", sans-serif;
   float: left;
   color: #fff;
@@ -137,7 +137,7 @@ STYLES
   padding-bottom: 0.3em;
 }
 
-.vuw-library-branding .cell.vuw-logo.library-branding .app-name.small {
+.vuw-library-branding .cell .library-branding .app-name.small {
   font-size: 3em;
   line-height: 1.5;
 }
