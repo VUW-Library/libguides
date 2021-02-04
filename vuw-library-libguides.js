@@ -96,7 +96,7 @@ $(document).ready(function() {
 
 	var isFirstPage = false;
 	var bcItems = $("#s-lib-bc-list li").map(function(item) {
-		item.text().trim().toLowerCase();
+		$(item).text().trim().toLowerCase();
 	});
 	isFirstPage = bcItems.indexOf("home") != 0;
 	changeClasses(isFirstPage);
