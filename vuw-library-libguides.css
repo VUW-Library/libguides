@@ -1,33 +1,31 @@
+/* Variables */
 /* CSS Document */
-
 @import url("./vuw-library-branding.css");
-
 /* Enter ovverride styles here */
-
 .container.header {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .container.footer {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  padding-left: 0;
+  padding-right: 0;
   font-size: 0.75em;
 }
 
 .container.footer #s-lg-guide-header-url {
   display: none;
 }
+
 .container.footer #s-lg-guide-print-url {
   font-size: 1.1em;
 }
-/*Name and title*/
 
-h1#s-lg-guide-name {
-  color: #115737 !important;
-  font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial,
-    "Helvetica Neue", "Helvetica", sans-serif;
-  font-weight: bolder;
+/*Name and title*/
+#s-lg-guide-name {
+  color: #115737;
+  font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial, "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 600;
   font-size: 4.28571em;
   -webkit-font-smoothing: antialiased;
 }
@@ -37,21 +35,21 @@ h1#s-lg-guide-name {
   margin-bottom: 0;
   background-color: #115737;
   color: #fff;
-  font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial,
-    "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial, "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 18px;
-  border:none;
+  border: none;
 }
 
 /*General body styles*/
-body.s-lg-guide-body {
+.s-lg-guide-body {
   font-size: 14px;
 }
 
 /*General box styles*/
 .s-lib-box {
   border: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-radius: 0;
 }
 
@@ -59,39 +57,49 @@ body.s-lg-guide-body {
   border-radius: 0;
 }
 
-.s-lib-box-content {
+.s-lib-box .s-lib-box-content {
   padding-left: 0;
 }
 
 /*Navigation styles*/
+#s-lg-tabs-container .nav-pills a {
+  color: #ddd;
+}
+
 #s-lg-tabs-container .nav-pills > li > a {
   background-color: #115737;
   border-radius: 0;
   color: #ddd;
 }
 
+#s-lg-tabs-container .nav-pills > li > a:hover {
+  color: #fff;
+  background-color: #115737;
+  border-radius: 0;
+}
+
 #s-lg-tabs-container .nav-pills > .active > a {
-  background-color: #0d4b2f;
+  color: #fff;
+  background-color: #115737;
   border-radius: 0;
 }
 
 #s-lg-tabs-container .nav-pills > .active > a:hover {
-  xxbackground-color: #fff; /*no change color on hover*/
   border-radius: 0;
-}
-
-#s-lg-tabs-container .nav-pills > li > a:hover {
-  background-color: #ccc;
-  border-radius: 0;
-}
-
-/*new navigation styling*/
-.nav-pills a {
-  color: #ddd;
+  background-color: #0d4b2f;
+  color: #fff;
 }
 
 #s-lg-guide-tabs .s-lg-tabs-side .s-lg-boxnav {
   margin: 0;
+}
+
+#s-lg-guide-tabs .s-lg-tabs-side .s-lg-boxnav .list-group-item {
+  margin: 0;
+  border: 0;
+  background-color: #0d4b2f;
+  border-radius: 0;
+  padding-left: 2em;
 }
 
 #s-lg-guide-tabs .s-lg-tabs-side .s-lg-subtab-ul {
@@ -100,55 +108,30 @@ body.s-lg-guide-body {
   margin-bottom: 0px;
 }
 
-#s-lg-guide-tabs .nav-pills .nav-pills,
-#s-lg-guide-tabs .nav-pills .nav-pills a {
-  background-color: #115737 !important;
+#s-lg-guide-tabs .s-lg-tabs-side .nav-pills .nav-pills, #s-lg-guide-tabs .s-lg-tabs-side .nav-pills .nav-pills a {
+  background-color: #ddd !important;
   font-weight: normal !important;
 }
 
-#s-lg-guide-tabs .nav-pills .nav-pills .list-group .list-group-item {
+#s-lg-guide-tabs .s-lg-tabs-side .nav-pills .nav-pills .list-group .list-group-item {
   background-color: rgba(0, 0, 0, 0.1) !important;
   font-weight: normal !important;
 }
 
-#s-lg-guide-tabs .nav-pills .nav-pills .list-group .list-group-item a {
+#s-lg-guide-tabs .s-lg-tabs-side .nav-pills .nav-pills .list-group .list-group-item a {
   background-color: transparent !important;
 }
 
-#s-lg-guide-tabs .s-lg-tabs-side .s-lg-boxnav .list-group-item {
-  margin: 0;
-  border: 0;
-  background-color:  #0d4b2f;
-  border-radius: 0;
-  padding-left: 2em;
-}
-
-.nav-stacked > li + li {
-  margin-top: 0;
-}
-
 #s-lg-guide-tabs .nav > li {
-  border-bottom: #115737 1px solid;
+  border-bottom: none;
 }
 
 #s-lg-guide-tabs .nav > li:last-child {
   border-bottom: 0;
 }
 
-#s-lg-tabs-container .nav-pills > .active > a {
-  color: #fff;
-}
-
-#s-lg-tabs-container .nav-pills > .active > a:hover {
-  background-color: #0d4b2f;
-  color: #fff;
-  border-radius: 0;
-}
-
-#s-lg-tabs-container .nav-pills > li > a:hover {
-  background-color:#115737;
-  color: #fff;
-  border-radius: 0;
+.nav-stacked > li + li {
+  margin-top: 0;
 }
 
 .s-lg-boxnav a:hover {
@@ -179,8 +162,50 @@ body.s-lg-guide-body {
   text-align: left;
 }
 
+.make-hidden {
+  display: none;
+}
+
+.nav-table {
+  table-layout: fixed;
+}
+
+#s-lib-footer-public {
+  font-size: inherit;
+}
+
+.s-lib-small {
+  font-size: inherit;
+}
+
+.nav.nav-tabs.split-button-nav {
+  font-size: x-large;
+  margin-bottom: 0.5em;
+}
+
+.fa-plus.fa-lg {
+  font-size: medium;
+}
+
+.s-lib-profile-div, .s-lib-profile-widget {
+  text-align: left;
+}
+
+.s-lib-profile-email, .s-lib-profile-email {
+  display: none;
+}
+
+.s-lib-profile-div {
+  margin-left: 10px;
+}
+
+#guide-title.int-page {
+  font-size: .5em;
+}
+
 @media only screen and (max-width: 800px) {
   h1#s-lg-guide-name {
     font-size: 2.5em !important;
   }
 }
+/*# sourceMappingURL=vuw-library-libguides.css.map */

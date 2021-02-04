@@ -1,0 +1,275 @@
+$Vic-green: #115737;
+$Vic-font: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial,
+    "Helvetica Neue", "Helvetica", sans-serif;
+
+/*
+FONTS
+*/
+@font-face {
+  font-family: "National";
+  font-weight: 400;
+  src: url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Regular.eot");
+  src: url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Regular.eot?#iefix") format("embedded-opentype"), url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Regular.woff") format("woff"), url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Regular.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "National";
+  font-weight: 500;
+  src: url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Semibold.eot");
+  src: url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Semibold.eot?#iefix") format("embedded-opentype"), url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Semibold.woff") format("woff"), url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Semibold.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "National";
+  font-weight: 600;
+  src: url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Extrabold.eot");
+  src: url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Extrabold.eot?#iefix") format("embedded-opentype"), url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Extrabold.woff") format("woff"), url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Extrabold.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
+/*
+STYLES
+*/
+
+.library-bg-color{
+	background-color: $Vic-green;		
+}
+
+.library-border-bgcolor{
+	background-color: $Vic-green;		
+}
+
+.table {
+	display: table;	
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+    .row {
+        display:table-row;	
+        .cell{
+            display: table-cell;	
+            padding: 10px;
+            height: 100%;
+            width: 100%;
+            vertical-align: top;
+            text-align: left;
+            &.menu {
+                width: 250px;
+                padding: 0;
+                background-color: #1d2624; 
+                border-right: 2px solid #1d2624;
+            }
+            &.collapse{
+                position: fixed;
+                display: block;	
+                padding: 10px;
+                border: 10px solid blue;
+                z-index: 1000;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.vuw-library-branding {
+    .table {
+        border: 0px solid red; 
+    }
+    .cell {
+        height:auto!important;
+        &.vuw-logo {
+            background-color: #1d2624;
+            width: 249px;
+            text-align: center;
+            vertical-align: middle;
+            padding: 1.5em 0;
+            a img {
+                border: 0;
+            }
+            &.library-branding{
+                background-color: $Vic-green;
+                width: auto;
+                .library_logo {
+                    font-family: "Nimbus Roman No 9 L", "FreeSerif", "Georgia", serif;
+                    color: #FFF;
+                    font-size: 3.5em;
+                    background-color: $Vic-green;	
+                    padding: 0em;
+                    padding-left: 0.4em;
+                    padding-right: 0.3em;
+                    float: right;
+                    margin-top: 0;
+                    white-space: nowrap;
+                    border-left: 3px solid #fff;
+                    line-height: 1.5;
+                    color:#fff !important;
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                    span.te_reo {
+                        display: block;
+                        font-size: 0.553571411em;
+                        margin-top: -0.9em;    
+                    }
+                }
+                .app-name {
+                    font-family: $Vic-font;    
+                    float: left;
+                    color: #fff;
+                    font-size: 4em;
+                    padding-left: 0.25em;
+                    -webkit-font-smoothing: antialiased;
+                    line-height: 1;
+                    padding-top: 0.3em;
+                    padding-bottom: 0.3em;
+                    &.small{
+                        font-size:3em;	
+                        line-height:1.5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mobile-masthead{
+	display: none !important;	
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.vuw-library-branding .cell.library-branding {
+        .library_logo {
+            font-size: 3em;
+        }
+	    .app-name {
+            font-size: 3.5em;
+            &.small{
+                font-size:2.5em;	
+                padding-top:0.3em;
+                padding-bottom:0.3em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+	.vuw-library-branding .cell.library-branding {
+        .library_logo {
+            font-size: 2.75em;
+        }
+        .app-name {
+            font-size: 3.25em;
+            padding-top: 0.3em;
+            padding-bottom: 0.3em;
+            &.small{
+                font-size: 2em;	
+                padding-top: 0.4em;
+                padding-bottom: 0.4em;
+            }
+        }
+    }
+}
+
+/*
+Mobile display
+*/
+
+@media only screen and (max-width: 800px) {
+	.mobile-hide {
+		display: none!important;	
+	}
+	
+	.vuw-library-branding .cell {
+        &.vuw-logo {
+            display: none;
+        }
+	    &.library-branding {
+            .library_logo {
+                font-size: 1.75em;
+            }
+            .app-name {
+                font-size: 2em;
+                padding-top: 0.25em;
+                padding-bottom: 0.08em;
+            }
+            &.small {
+                font-size: 1.8em;
+                padding-top: 0.05em;
+                padding-bottom: 0.05em;
+            }
+        }
+    }
+
+	div.row.mobile-masthead {
+		display: table-row !important;
+		padding: 0 !important;	
+        > div.cell {
+            padding: 0.5em !important;	
+            height: 1em;
+        }
+    }
+	
+	.vuw-library-branding-header .vic-header {
+        #masthead .vic-menu {
+            line-height: 1em;
+            .logo {
+                padding:0em 0.5em;	
+                height:auto;
+            }
+        }
+	    .vic_logo img{
+            width:120px;
+            height:auto;
+            border:0px;	
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+	.vuw-library-branding .cell.library-branding {
+        .library_logo {
+            font-size: 1.2em;
+            clear: none;
+        }
+	    .app-name {
+            font-size: 1.8em;
+            float: left;
+            &.small {
+                font-size: 1.5em;
+                padding-top: 0.3em;
+                padding-bottom: 0.3em;
+                line-height: 1;
+                float: left;
+                clear: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 250px) {
+	body{
+		font-size: 0.6em;	
+	}
+	
+	.vuw-library-branding .cell.library-branding {
+        .library_logo {
+            font-size:0.8em;
+        }
+	    .app-name {
+            font-size: 1em;
+            &.small {
+                font-size: 1em;
+                padding-top: 0.3em;
+                padding-bottom: 0.3em;
+                line-height: 1;
+            }
+        }
+    }
+
+}

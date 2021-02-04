@@ -1,0 +1,214 @@
+/* Variables */
+
+$Vic-green: #115737;
+$Vic-green-active: #0d4b2f;
+$Vic-font: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial,
+    "Helvetica Neue", "Helvetica", sans-serif;
+$side-nav-link-colour: #ddd;
+
+/* CSS Document */
+
+@import url("./vuw-library-branding.css");
+
+/* Enter ovverride styles here */
+
+.container {
+    &.header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &.footer {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 0.75em;
+        #s-lg-guide-header-url {
+            display: none;
+        }
+        #s-lg-guide-print-url {
+            font-size: 1.1em;
+        }
+    }
+}
+
+/*Name and title*/
+
+#s-lg-guide-name {
+  color: $Vic-green;
+  font-family: $Vic-font;
+  font-weight: 600;
+  font-size: 4.28571em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.s-lib-box-std .s-lib-box-title {
+  padding: 10px;
+  margin-bottom: 0;
+  background-color: $Vic-green;
+  color: #fff;
+  font-family: $Vic-font;
+  font-size: 18px;
+  border:none;
+}
+
+/*General body styles*/
+.s-lg-guide-body {
+  font-size: 14px;
+}
+
+/*General box styles*/
+.s-lib-box {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+    .s-lib-box-title {
+        border-radius: 0;
+    }
+    .s-lib-box-content {
+        padding-left: 0;
+    }
+}
+
+/*Navigation styles*/
+#s-lg-tabs-container .nav-pills {
+    a {
+        color: $side-nav-link-colour;
+      }
+    > li > a {
+        background-color: $Vic-green;
+        border-radius: 0;
+        color: $side-nav-link-colour;
+        &:hover {
+            color: #fff;
+            background-color: $Vic-green;
+            border-radius: 0;
+        }
+    }
+    > .active > a {
+        color: #fff;
+        background-color: $Vic-green;
+        border-radius: 0;
+        &:hover {
+            border-radius: 0;
+            background-color: $Vic-green-active;
+            color: #fff;
+        }
+    }
+}
+
+#s-lg-guide-tabs {
+    .s-lg-tabs-side {
+        .s-lg-boxnav {
+            margin: 0;
+            .list-group-item {
+                margin: 0;
+                border: 0;
+                background-color:  $Vic-green-active;
+                border-radius: 0;
+                padding-left: 2em;
+            }
+        }
+        .s-lg-subtab-ul {
+            margin-top: 0;
+            margin-left: 0;
+            margin-bottom: 0px;
+        }
+        .nav-pills {
+            .nav-pills, .nav-pills a {
+            background-color: $side-nav-link-colour !important;
+                font-weight: normal !important;
+            }
+            .nav-pills .list-group .list-group-item {
+                background-color: rgba(0, 0, 0, 0.1) !important;
+                font-weight: normal !important;
+            }
+            .nav-pills .list-group .list-group-item a {
+                background-color: transparent !important;
+            }
+        }
+    }
+    .nav > li {
+        border-bottom: none;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}
+
+.nav-stacked > li + li {
+  margin-top: 0;
+}
+
+.s-lg-boxnav a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*misc */
+#s-lg-reuse-box-tab a,
+#s-lg-reuse-content-tab a,
+#s-lg-add-content-tab a,
+#s-lg-add-box-tab a,
+#s-lg-subject-tab a,
+#s-lg-enhanced-tab a {
+  color: black;
+  border: #ccc solid 1px;
+}
+
+#s-lg-box-1175944 {
+  margin-top: -40px;
+}
+
+#s-lg-guide-main {
+  padding-top: 0 !important;
+}
+
+.container ul {
+  text-align: left;
+}
+
+.make-hidden {
+    display: none;
+}
+
+.nav-table {
+    table-layout: fixed;
+}
+
+#s-lib-footer-public {
+    font-size: inherit;
+}
+
+.s-lib-small {
+    font-size: inherit;
+}
+
+.nav.nav-tabs.split-button-nav {
+    font-size: x-large;
+    margin-bottom:0.5em;
+}
+
+.fa-plus.fa-lg {
+    font-size: medium;
+}
+
+.s-lib-profile-div, .s-lib-profile-widget {
+    text-align: left;
+}
+
+.s-lib-profile-email, .s-lib-profile-email {
+    display: none;
+}
+
+.s-lib-profile-div {
+    margin-left: 10px;
+}
+
+#guide-title.int-page {
+    font-size: .5em;
+}
+
+@media only screen and (max-width: 800px) {
+  h1#s-lg-guide-name {
+    font-size: 2.5em !important;
+  }
+}
