@@ -5,6 +5,7 @@
    Use to add javascript support or overrides.
 */
 
+"use strict";
 var VU = VU || {};
 VU.LG = {};
 
@@ -13,7 +14,6 @@ VU.LG = {};
 // This sets up and binds the events to the search box and opens results in a new window. 
 (function ($) {
 	VU.LG.Base = function(){
-		"use strict";
 		this.init();
 	}
 	VU.LG.Base.prototype = {
@@ -65,60 +65,39 @@ VU.LG = {};
 	}
 
 	$(document).ready(function () {
-		"use strict";
-		$("#s-lg-guide-tabs li.active").parents("li").addClass("active");
-		$(".list-group.s-lg-boxnav").each(function(index, element) {
-			if($(this).children("li").length === 1) {
-				$(this).css("display", "none");	
-			}
-		});
-		(new VU.LG.Base());
+		new VU.LG.Base();
 	})
 })(jQuery);
 
-
-$(document).ready(function() {
-	var tables = $("table"); 
-	console.log("_-----" + tables.length);
-	tables.forEach(function(table, i){
-		console.log('_-----' + i);
-		table.addClass("table-layout-ov");
-	});
-
-  console.log("_+_+_+");
-  var isFirstPage = false;
-  var bcItems = $("#s-lib-bc-list li").map(function(item) {
-	item.text().trim().toLowerCase();
-  });
-	if (bcItems.indexOf("home") === 0) {
-	  isFirstPage = true;
-	}
-  changeClasses(isFirstPage);
-});
-
 function changeClasses(isFirstPage) {
   if (!isFirstPage) {
-	$("#left-guide-body").removeClass("make-hidden");
 	$("#page-name").removeClass("make-hidden");
-	$("#guide-title").removeAttribute("class");
-	console.log("Class List : " + $("#guide-title").getAttribute("class"));
-	$("#guide-title").addClass("int-page");
-	console.log("Class List : " + $("#guide-title").getAttribute("class"));
-	$("#guide-title").removeClass("make-hidden");
-	$("#left-guide-body").addClass("col-md-3");
-	$("#left-guide-body").addClass("s-lg-tabs-side");
-	$("#left-guide-body").addClass("pad-bottom-med");
-	$("#right-guide-body").addClass("col-md-9");
-	$("#right-guide-body").removeClass("col-md-12");
+	$("#guide-title").removeClass("make-hidden").addClass("int-page");
+	$("#left-guide-body").removeClass("make-hidden").addClass("col-md-3")
+		.addClass("s-lg-tabs-side").addClass("pad-bottom-med");
+	$("#right-guide-body").removeClass("col-md-12").addClass("col-md-9");
   }
   else {
-	$("#left-guide-body").addClass("make-hidden");
 	$("#guide-title").removeClass("make-hidden");
 	$("#page-name").addClass("make-hidden");
-	$("#left-guide-body").removeClass("col-md-3");
-	$("#left-guide-body").removeClass("s-lg-tabs-side");
-	$("#left-guide-body").removeClass("pad-bottom-med");
-	$("#right-guide-body").addClass("col-md-12");
-	$("#right-guide-body").removeClass("col-md-9");
+	$("#left-guide-body").addClass("make-hidden").removeClass("col-md-3")
+		.removeClass("s-lg-tabs-side").removeClass("pad-bottom-med");
+	$("#right-guide-body").removeClass("col-md-9").addClass("col-md-12");
   }
-}
+};
+
+
+$(document).ready(function() {
+	$("#s-lg-guide-tabs li.active").parents("li").addClass("active");
+	$(".list-group.s-lg-boxnav").each(function() {
+		($(this).children("li").length === 1) && $(this).css("display", "none");
+	});
+	$("table").addClass("table-layout-ov");
+
+	var isFirstPage = false;
+	var bcItems = $("#s-lib-bc-list li").map(function(item) {
+		item.text().trim().toLowerCase();
+	});
+	isFirstPage = bcItems.indexOf("home") != 0;
+	changeClasses(isFirstPage);
+});
