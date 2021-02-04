@@ -97,7 +97,6 @@ function changeClasses(isFirstPage) {
   }
 };
 
-
 $(document).ready(function() {
 	$("#s-lg-guide-tabs li.active").parents("li").addClass("active");
 	$(".list-group.s-lg-boxnav").each(function() {
@@ -106,11 +105,8 @@ $(document).ready(function() {
 	$("table").addClass("table-layout-ov");
 
 	var isFirstPage = false;
-	Array.from($("#s-lib-bc-list li")).forEach(function(item) {
-		console.log(item.innerText.trim().toLowerCase());
-	});
 	var bcItems = Array.from($("#s-lib-bc-list li")).map(function(item) {
-		item.innerText.trim().toLowerCase();
+		return item.innerText.trim().toLowerCase();
 	});
 	console.log(bcItems);
 	isFirstPage = bcItems.indexOf("home") != 0;
