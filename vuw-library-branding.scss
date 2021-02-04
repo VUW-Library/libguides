@@ -74,6 +74,50 @@ STYLES
     }
 }
 
+.vuw-library-header.flex {
+    .vuw-library-branding {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        .vuw-logo {
+            background-color: #1d2624;
+            padding: 1.5em 0;
+            a {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                flex-direction: column;
+                align-items: center
+            }
+        }
+        .library-branding {
+            background-color: $Vic-green;        
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex: 1;
+            justify-content: flex-start;
+            .app-name {
+                font-family: $Vic-font;
+                color: #fff;
+                font-size: 4em;
+                padding-left: 0.25em;
+                -webkit-font-smoothing: antialiased;
+                line-height: 1;
+                &.small {
+                    font-size: 3em;	
+                    line-height: 1.5;
+                }
+            }
+            .library-logo {
+                background-color: transparent;
+                display: flex;
+                padding: 0;
+            }
+        }
+    }
+}
+
 .vuw-library-branding {
     .table {
         border: 0px solid red; 
