@@ -88,7 +88,10 @@ STYLES
 
 .vuw-library-header.flex .vuw-library-branding .vuw-logo {
   background-color: #1d2624;
-  padding: 1.5em 0;
+  padding: 1em 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .vuw-library-header.flex .vuw-library-branding .vuw-logo a {
@@ -106,6 +109,10 @@ STYLES
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.vuw-library-header.flex .vuw-library-branding .vuw-logo a img {
+  width: 100%;
 }
 
 .vuw-library-header.flex .vuw-library-branding .library-branding {
@@ -135,6 +142,9 @@ STYLES
   padding-left: 0.25em;
   -webkit-font-smoothing: antialiased;
   line-height: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .vuw-library-header.flex .vuw-library-branding .library-branding .app-name.small {
