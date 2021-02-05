@@ -82,7 +82,7 @@ STYLES
         .vuw-logo {
             background-color: #1d2624;
             padding: 1em 0;
-            flex: 0 0 auto;
+            flex: 1;
             a {
                 display: flex;
                 justify-content: center;
@@ -95,21 +95,23 @@ STYLES
                 }
             }
         }
-        .library-branding {
-            background-color: $Vic-green;        
+        .library-branding {        
             display: flex;
             flex-direction: row;
-            align-items: center;
-            flex: 1;
+            align-items: stretch;
+            flex: 4;
             justify-content: flex-start;
             .app-name {
+                background-color: $Vic-green;
                 font-family: $Vic-font;
                 color: #fff;
                 font-size: 4em;
-                padding-left: 0.25em;
+                padding-left: 1em;
                 -webkit-font-smoothing: antialiased;
                 line-height: 1;
-                flex: 1;
+                flex: 2;
+                display: flex;
+                align-items: center;
                 &.small {
                     font-size: 3em;	
                     line-height: 1.5;
@@ -119,6 +121,11 @@ STYLES
                 background-color: transparent;
                 display: flex;
                 padding: 0;
+                flex: 1;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }
@@ -187,7 +194,7 @@ STYLES
 }
 
 .mobile-masthead{
-	display: none !important;	
+	display: none;	
 }
 
 @media only screen and (max-width: 1000px) {
@@ -208,6 +215,24 @@ STYLES
 }
 
 @media only screen and (max-width: 900px) {
+
+    .vuw-library-header.flex {
+        .mobile-masthead {
+            display: flex;
+            background-color: #1d2624;
+            padding: .5em 1em;
+        }
+        img {
+            width: 120px;
+            height: 100%;
+        }
+        .library-branding .app-name {
+            font-size: 3.25;
+            &.small {
+                font-size: 2em;
+            }
+        }
+    }
 
 	.vuw-library-branding .cell.library-branding {
         .library_logo {
@@ -233,7 +258,25 @@ Mobile display
 @media only screen and (max-width: 800px) {
 	.mobile-hide {
 		display: none!important;	
-	}
+    }
+    
+    .vuw-library-header.flex {
+        .mobile-masthead {
+            display: flex;
+            background-color: #1d2624;
+            padding: .5em 1em;
+        }
+        img {
+            width: 120px;
+            height: 100%;
+        }
+        .library-branding .app-name {
+            font-size: 2em;
+            &.small {
+                font-size: 1.8em;
+            }
+        }
+    }
 	
 	.vuw-library-branding .cell {
         &.vuw-logo {
@@ -282,6 +325,26 @@ Mobile display
 }
 
 @media only screen and (max-width: 450px) {
+
+    .vuw-library-header.flex {
+        .mobile-masthead {
+            display: flex;
+            background-color: #1d2624;
+            padding: .5em 1em;
+        }
+        img {
+            width: 120px;
+            height: 100%;
+        }
+        .library-branding .app-name  {
+            font-size: 1.8em;
+            flex: 1;
+            &.small {
+                font-size: 1.5em;
+            }
+        }
+    }
+
 	.vuw-library-branding .cell.library-branding {
         .library_logo {
             font-size: 1.2em;
@@ -305,7 +368,16 @@ Mobile display
 @media only screen and (max-width: 250px) {
 	body{
 		font-size: 0.6em;	
-	}
+    }
+    
+    .vuw-library-header.flex {
+        .library-branding .app-name {
+            font-size: 1em;
+            &.small {
+                font-size: 1em;
+            }
+        }
+    }
 	
 	.vuw-library-branding .cell.library-branding {
         .library_logo {
