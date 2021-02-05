@@ -105,7 +105,7 @@ $(document).ready(function() {
 	$("table").addClass("table-layout-ov");
 
 	var isFirstPage = false;
-	var bcItems = Array.from($("#s-lib-bc-list li")).map(function(item) {
+	var bcItems = [].slice.call($("#s-lib-bc-list li")).map(function(item) {
 		return item.innerText.trim().toLowerCase();
 	});
 	isFirstPage = bcItems.indexOf("home") != -1;
