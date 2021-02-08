@@ -377,6 +377,7 @@ Mobile display
     .vuw-library-header.flex {
         .vuw-library-branding .library-branding .app-name {
             font-size: 1em;
+            flex: 1;
             &.small {
                 font-size: 1em;
             }
