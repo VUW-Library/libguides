@@ -133,9 +133,7 @@ STYLES
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: stretch;
 }
 
 .vuw-library-header.flex .vuw-library-branding .library-branding .app-name {
@@ -152,9 +150,9 @@ STYLES
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .vuw-library-header.flex .vuw-library-branding .library-branding .app-name.small {

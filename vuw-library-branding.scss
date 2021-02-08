@@ -101,7 +101,7 @@ STYLES
             align-items: stretch;
             flex: 4;
             justify-content: flex-start;
-            align-items: center;
+            align-items: stretch;
             .app-name {
                 background-color: $Vic-green;
                 font-family: $Vic-font;
@@ -112,7 +112,7 @@ STYLES
                 line-height: 1;
                 flex: 2;
                 display: flex;
-                align-items: stretch;
+                align-items: center;
                 &.small {
                     font-size: 3em;	
                     line-height: 1.5;
