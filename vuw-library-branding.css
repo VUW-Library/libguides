@@ -152,9 +152,9 @@ STYLES
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .vuw-library-header.flex .vuw-library-branding .library-branding .app-name.small {
@@ -375,13 +375,13 @@ Mobile display
     width: 120px;
     height: 100%;
   }
-  .vuw-library-header.flex .vuw-library-brandindg .library-branding .app-name {
+  .vuw-library-header.flex .vuw-library-branding .library-branding .app-name {
     font-size: 1.8em;
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
   }
-  .vuw-library-header.flex .vuw-library-brandindg .library-branding .app-name.small {
+  .vuw-library-header.flex .vuw-library-branding .library-branding .app-name.small {
     font-size: 1.5em;
   }
   .vuw-library-branding .cell.library-branding .library_logo {
