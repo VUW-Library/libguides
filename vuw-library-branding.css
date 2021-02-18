@@ -177,7 +177,7 @@ STYLES
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1;
   margin: 1rem;
   border-left: 2px solid #FFF;
@@ -189,7 +189,7 @@ STYLES
 }
 
 .vuw-library-header.flex .vuw-library-branding .library-branding .library-logo .te-reo {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 .vuw-library-branding .table {
@@ -463,7 +463,7 @@ Mobile display
     font-size: 1em;
   }
   .vuw-library-header.flex .vuw-library-branding .library-branding .library-logo {
-    padding: 1rem 0 0 0;
+    padding: 1rem 0 0 .4rem;
     font-size: 1.25rem;
     border-left: 0;
   }
