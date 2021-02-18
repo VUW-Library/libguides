@@ -117,6 +117,7 @@ STYLES
 }
 
 .vuw-library-header.flex .vuw-library-branding .library-branding {
+  background-color: #115737;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,7 +138,6 @@ STYLES
 }
 
 .vuw-library-header.flex .vuw-library-branding .library-branding .app-name {
-  background-color: #115737;
   font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial, "Helvetica Neue", "Helvetica", sans-serif;
   color: #fff;
   font-size: 4em;
@@ -161,19 +161,35 @@ STYLES
 }
 
 .vuw-library-header.flex .vuw-library-branding .library-branding .library-logo {
-  background-color: transparent;
+  font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial, "Helvetica Neue", "Helvetica", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
+  padding: 0 0 0 2rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  color: #FFF;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 4rem;
+  line-height: 1;
+  margin: 1rem;
+  border-left: 2px solid #FFF;
 }
 
-.vuw-library-header.flex .vuw-library-branding .library-branding .library-logo img {
-  width: 100%;
-  height: 100%;
+.vuw-library-header.flex .vuw-library-branding .library-branding .library-logo a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.vuw-library-header.flex .vuw-library-branding .library-branding .library-logo a .te-reo {
+  font-size: 3.5rem;
 }
 
 .vuw-library-branding .table {
