@@ -208,9 +208,20 @@ STYLES
 	display: none;	
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1200px) {
+    .vuw-library-header.flex {
+        .vuw-library-branding .library-branding .library-logo {
+            font-size: 3rem;
+            .te-reo {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
 
-	.vuw-library-branding .cell.library-branding {
+@media only screen and (max-width: 991px) {
+    
+    .vuw-library-branding .cell.library-branding {
         .library_logo {
             font-size: 3em;
         }
@@ -282,11 +293,22 @@ Mobile display
             .vuw-logo {
                 display: none;
             }
-            .library-branding .app-name {
-                flex: 3;
-                font-size: 2em;
-                &.small {
-                    font-size: 1.8em;
+            .library-branding {
+                .app-name {
+                    flex: 3;
+                    font-size: 2em;
+                    &.small {
+                        font-size: 1.8em;
+                    }
+                }
+                .library-logo {
+                    padding: 0 0 0 1rem;
+                    font-size: 1.75rem;
+                    border-left: 0;
+                    border-left: 2px solid #FFF;
+                    .te-reo {
+                        font-size: 1.25rem;
+                    }
                 }
             }
         }
@@ -350,11 +372,23 @@ Mobile display
             width: 120px;
             height: 100%;
         }
-        .vuw-library-branding .library-branding .app-name  {
-            font-size: 1.8em;
-            flex: 2;
-            &.small {
-                font-size: 1.5em;
+        .vuw-library-branding .library-branding {
+            flex-direction: column;
+            .app-name  {
+                font-size: 1.8em;
+                flex: 2;
+                &.small {
+                    font-size: 1.5em;
+                }
+            }
+            .library-logo {
+                padding: 1rem 0 0 1rem;
+                font-size: 1.5rem;
+                border-left: 0;
+                border-top: 1px solid #FFF;
+                .te-reo {
+                    font-size: 1.25rem;
+                }
             }
         }
     }
@@ -385,11 +419,21 @@ Mobile display
     }
     
     .vuw-library-header.flex {
-        .vuw-library-branding .library-branding .app-name {
-            font-size: 1em;
-            flex: 1;
-            &.small {
+        .vuw-library-branding .library-branding {
+            .app-name {
                 font-size: 1em;
+                flex: 1;
+                &.small {
+                    font-size: 1em;
+                }
+            }
+            .library-logo {
+                padding: 1rem 0 0 0;
+                font-size: 1.25rem;
+                border-left: 0;
+                .te-reo {
+                    font-size: 1rem;
+                }
             }
         }
     }
