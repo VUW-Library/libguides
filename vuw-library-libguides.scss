@@ -206,6 +206,10 @@ $side-nav-link-colour: #ddd;
     font-size: .5em;
 }
 
+.dropdown-menu {
+    background-color: $Vic-green-active;
+}
+
 @media only screen and (max-width: 800px) {
   h1#s-lg-guide-name {
     font-size: 2.5em !important;
