@@ -114,7 +114,7 @@ $side-nav-link-colour: #ddd;
         }
         .nav-pills {
             .nav-pills, .nav-pills a {
-            background-color: $side-nav-link-colour !important;
+                color: $side-nav-link-colour !important;
                 font-weight: normal !important;
             }
             .nav-pills .list-group .list-group-item {
