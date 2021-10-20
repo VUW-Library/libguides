@@ -8,7 +8,6 @@ FONTS
   src: url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Regular.eot?#iefix") format("embedded-opentype"), url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Regular.woff") format("woff"), url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Regular.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
-
 @font-face {
   font-family: "National";
   font-weight: 500;
@@ -16,7 +15,6 @@ FONTS
   src: url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Semibold.eot?#iefix") format("embedded-opentype"), url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Semibold.woff") format("woff"), url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Semibold.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
-
 @font-face {
   font-family: "National";
   font-weight: 600;
@@ -24,7 +22,6 @@ FONTS
   src: url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Extrabold.eot?#iefix") format("embedded-opentype"), url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Extrabold.woff") format("woff"), url("//library.victoria.ac.nz/library/library-branding/assets/fonts/NationalWebLF-Extrabold.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
-
 /*
 STYLES
 */
@@ -43,11 +40,9 @@ STYLES
   margin: 0;
   padding: 0;
 }
-
 .table .row {
   display: table-row;
 }
-
 .table .row .cell {
   display: table-cell;
   padding: 10px;
@@ -56,14 +51,12 @@ STYLES
   vertical-align: top;
   text-align: left;
 }
-
 .table .row .cell.menu {
   width: 250px;
   padding: 0;
   background-color: #1d2624;
   border-right: 2px solid #1d2624;
 }
-
 .table .row .cell.collapse {
   position: fixed;
   display: block;
@@ -74,69 +67,35 @@ STYLES
 }
 
 .vuw-library-header.flex .vuw-library-branding {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
 }
-
 .vuw-library-header.flex .vuw-library-branding .vuw-logo {
   background-color: #1d2624;
   padding: 1em 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-
 .vuw-library-header.flex .vuw-library-branding .vuw-logo a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .vuw-library-header.flex .vuw-library-branding .vuw-logo a img {
   width: 100%;
   height: 100%;
 }
-
 .vuw-library-header.flex .vuw-library-branding .library-branding {
   background-color: #115737;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: row;
+  align-items: stretch;
+  flex: 4;
+  justify-content: flex-start;
   align-items: stretch;
 }
-
 .vuw-library-header.flex .vuw-library-branding .library-branding .app-name {
   font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial, "Helvetica Neue", "Helvetica", sans-serif;
   color: #fff;
@@ -144,50 +103,31 @@ STYLES
   padding-left: 1em;
   -webkit-font-smoothing: antialiased;
   line-height: 1;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 2;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .vuw-library-header.flex .vuw-library-branding .library-branding .app-name.small {
   font-size: 3em;
   line-height: 1.5;
 }
-
 .vuw-library-header.flex .vuw-library-branding .library-branding .library-logo {
   font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial, "Helvetica Neue", "Helvetica", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 0 0 2rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   color: #FFF;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   font-size: 3rem;
   line-height: 1;
   margin: 1rem;
   border-left: 2px solid #FFF;
 }
-
 .vuw-library-header.flex .vuw-library-branding .library-branding .library-logo a {
   color: #FFF;
   text-decoration: none;
 }
-
 .vuw-library-header.flex .vuw-library-branding .library-branding .library-logo .te-reo {
   font-size: 2.5rem;
 }
@@ -195,11 +135,9 @@ STYLES
 .vuw-library-branding .table {
   border: 0px solid red;
 }
-
 .vuw-library-branding .cell {
   height: auto !important;
 }
-
 .vuw-library-branding .cell.vuw-logo {
   background-color: #1d2624;
   width: 249px;
@@ -207,16 +145,13 @@ STYLES
   vertical-align: middle;
   padding: 1.5em 0;
 }
-
 .vuw-library-branding .cell.vuw-logo a img {
   border: 0;
 }
-
 .vuw-library-branding .cell.library-branding {
   background-color: #115737;
   width: auto;
 }
-
 .vuw-library-branding .cell.library-branding .library_logo {
   font-family: "Nimbus Roman No 9 L", "FreeSerif", "Georgia", serif;
   color: #FFF;
@@ -232,18 +167,15 @@ STYLES
   line-height: 1.5;
   color: #fff !important;
 }
-
 .vuw-library-branding .cell.library-branding .library_logo a {
   color: #fff;
   text-decoration: none;
 }
-
 .vuw-library-branding .cell.library-branding .library_logo span.te_reo {
   display: block;
   font-size: 0.553571411em;
   margin-top: -0.9em;
 }
-
 .vuw-library-branding .cell.library-branding .app-name {
   font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial, "Helvetica Neue", "Helvetica", sans-serif;
   float: left;
@@ -255,7 +187,6 @@ STYLES
   padding-top: 0.3em;
   padding-bottom: 0.3em;
 }
-
 .vuw-library-branding .cell.library-branding .app-name.small {
   font-size: 3em;
   line-height: 1.5;
@@ -273,7 +204,6 @@ STYLES
     font-size: 2.5rem;
   }
 }
-
 @media only screen and (max-width: 991px) {
   .vuw-library-branding .cell.library-branding .library_logo {
     font-size: 3em;
@@ -286,22 +216,22 @@ STYLES
     padding-top: 0.3em;
     padding-bottom: 0.3em;
   }
-  /* .vuw-library-header.flex {
-        .vuw-logo {
-            flex: 1 0 25%;
-        }
-        .library-branding {
-            flex: 3 0 75%;
-        }
-        .app-name {
-            flex: 1 0 50%;
-        }
-        .library-logo {
-            flex: 1 0 50%;
-        }
-    } */
-}
 
+  /* .vuw-library-header.flex {
+      .vuw-logo {
+          flex: 1 0 25%;
+      }
+      .library-branding {
+          flex: 3 0 75%;
+      }
+      .app-name {
+          flex: 1 0 50%;
+      }
+      .library-logo {
+          flex: 1 0 50%;
+      }
+  } */
+}
 @media only screen and (max-width: 900px) {
   .vuw-library-branding .cell.library-branding .library_logo {
     font-size: 2.75em;
@@ -317,7 +247,6 @@ STYLES
     padding-bottom: 0.4em;
   }
 }
-
 /*
 Mobile display
 */
@@ -325,12 +254,11 @@ Mobile display
   .mobile-hide {
     display: none !important;
   }
+
   .vuw-library-header.flex .mobile-masthead {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     background-color: #1d2624;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
   }
   .vuw-library-header.flex img {
     width: 120px;
@@ -340,9 +268,7 @@ Mobile display
     display: none;
   }
   .vuw-library-header.flex .vuw-library-branding .library-branding .app-name {
-    -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
+    flex: 3;
     font-size: 2em;
   }
   .vuw-library-header.flex .vuw-library-branding .library-branding .app-name.small {
@@ -357,6 +283,7 @@ Mobile display
   .vuw-library-header.flex .vuw-library-branding .library-branding .library-logo .te-reo {
     font-size: 1.25rem;
   }
+
   .vuw-library-branding .cell.vuw-logo {
     display: none;
   }
@@ -373,6 +300,7 @@ Mobile display
     padding-top: 0.05em;
     padding-bottom: 0.05em;
   }
+
   div.row.mobile-masthead {
     display: table-row !important;
     padding: 0 !important;
@@ -381,6 +309,7 @@ Mobile display
     padding: 0.5em !important;
     height: 1em;
   }
+
   .vuw-library-branding-header .vic-header #masthead .vic-menu {
     line-height: 1em;
   }
@@ -394,30 +323,22 @@ Mobile display
     border: 0px;
   }
 }
-
 @media only screen and (max-width: 450px) {
   .vuw-library-header.flex .mobile-masthead {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     background-color: #1d2624;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
   }
   .vuw-library-header.flex img {
     width: 120px;
     height: 100%;
   }
   .vuw-library-header.flex .vuw-library-branding .library-branding {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vuw-library-header.flex .vuw-library-branding .library-branding .app-name {
     font-size: 1.8em;
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
+    flex: 2;
   }
   .vuw-library-header.flex .vuw-library-branding .library-branding .app-name.small {
     font-size: 1.5em;
@@ -431,6 +352,7 @@ Mobile display
   .vuw-library-header.flex .vuw-library-branding .library-branding .library-logo .te-reo {
     font-size: 1.25rem;
   }
+
   .vuw-library-branding .cell.library-branding .library_logo {
     font-size: 1.2em;
     clear: none;
@@ -448,28 +370,27 @@ Mobile display
     clear: none;
   }
 }
-
 @media only screen and (max-width: 250px) {
   body {
     font-size: 0.6em;
   }
+
   .vuw-library-header.flex .vuw-library-branding .library-branding .app-name {
     font-size: 1em;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
   }
   .vuw-library-header.flex .vuw-library-branding .library-branding .app-name.small {
     font-size: 1em;
   }
   .vuw-library-header.flex .vuw-library-branding .library-branding .library-logo {
-    padding: 1rem 0 0 .4rem;
+    padding: 1rem 0 0 0.4rem;
     font-size: 1.25rem;
     border-left: 0;
   }
   .vuw-library-header.flex .vuw-library-branding .library-branding .library-logo .te-reo {
     font-size: 1rem;
   }
+
   .vuw-library-branding .cell.library-branding .library_logo {
     font-size: 0.8em;
   }
@@ -482,5 +403,4 @@ Mobile display
     padding-bottom: 0.3em;
     line-height: 1;
   }
-}
-/*# sourceMappingURL=vuw-library-branding.css.map */
+}/*# sourceMappingURL=vuw-library-branding.css.map */
