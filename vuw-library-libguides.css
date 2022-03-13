@@ -127,7 +127,7 @@
 
 #s-lg-tabs-container .nav-tabs > .active > a {
   border-color: #ddd;
-  border-bottom: transparent;
+  border-bottom-color: transparent;
 }
 
 /* profile, with wide and narrow layouts */
