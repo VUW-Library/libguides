@@ -425,6 +425,10 @@ Mobile display
     width: 100%;
     padding: 1.6rem 2.22rem;
     position: relative;
+<<<<<<< HEAD
+=======
+    max-width: 1170;
+>>>>>>> a321ed47089ecde9aa01f0d4759d593b2ae12955
   }
 }
 @media (min-width: 60em) {
