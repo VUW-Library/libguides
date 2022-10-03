@@ -142,6 +142,15 @@ $side-nav-link-colour: #ddd;
   color: #fff;
 }
 
+.s-lib-jqtabs div.tab-content {
+    border-top: 1px solid #ddd;
+}
+
+#s-lg-tabs-container .nav-tabs > .active > a {
+    border-color: #ddd;
+    border-bottom-color: transparent;
+}
+
 /* profile, with wide and narrow layouts */
 
 

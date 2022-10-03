@@ -121,6 +121,15 @@
   color: #fff;
 }
 
+.s-lib-jqtabs div.tab-content {
+  border-top: 1px solid #ddd;
+}
+
+#s-lg-tabs-container .nav-tabs > .active > a {
+  border-color: #ddd;
+  border-bottom-color: transparent;
+}
+
 /* profile, with wide and narrow layouts */
 .s-lib-profile-container img {
   box-shadow: none;
@@ -177,7 +186,6 @@
     float: none;
     margin-right: inherit;
   }
-
   .col-md-3 s-lib-profile-container ul {
     flex-direction: column;
     align-items: flex-start;
