@@ -400,6 +400,7 @@ Mobile display
   background-color: #f7f7f7;
   border-bottom: none;
   padding-top: 0;
+  margin-bottom: 1.5rem;
 }
 .libcal-header::after {
   display: block;
@@ -424,12 +425,12 @@ Mobile display
     width: 100%;
     padding: 1.6rem 2.22rem;
     position: relative;
-    max-width: 141.76125rem;
   }
 }
 @media (min-width: 60em) {
   .libcal-header .header-inner {
     padding: 1.2rem 2.4rem;
+    max-width: 1170px;
   }
 }
 .libcal-header .header-inner::after {
