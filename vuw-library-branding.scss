@@ -460,8 +460,6 @@ Mobile display
 
 // LibCal styling
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-
 $breakpoints: ("tablet": 39em, "laptop": 60em);
 
 @mixin media($breakpoint) {
